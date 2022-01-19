@@ -42,29 +42,9 @@
                 </table>
             </div>
         </div>
-        <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-            <h4><strong>Highest Paying Customers</strong></h4>
-            <div style="width: 80%;margin: auto;">
-                <table class="attendance_form_table">
-                    <tbody id="attendance_form_table_data">
-                        {%for customer in highest_paying %}
-                        {% if customer.total_trans > 0 %}
-                        <tr>
-                            <td>{{customer.name}}</td>
-                            <td>{{customer.total_trans}}</td>
-                        </tr>
-                        {% endif %}
-                        {%endfor%}
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        
         <div class="flex-40 verticalFlex" style="flex: 0 0 30%;">
-            <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
-                <h6>Total Customers</h6>
-                <h3 style="color: #4098FE;">{{total_customer}}</h3>
-            </div>
+           
             <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
                 <h6>Total Book Titles</h6>
                 <h3 style="color: #FF5370;">{{total_titles}}</h3>
@@ -78,24 +58,7 @@
         </div>
     </div>
     <div class="flexContainer">
-        <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-            <h4><strong>Customers With Highest Debt</strong></h4>
-            <div style="width: 80%;margin: auto;">
-                <table class="attendance_form_table">
-                    <tbody id="attendance_form_table_data">
-                        {%for cust in highest_debt %}
-                        {% if cust.debt > 0 %}
-                        <tr>
-                            <td>{{cust.name}}</td>
-                            <td>{{cust.debt}}</td>
-                        </tr>
-                        {% endif %}
-                        {%endfor%}
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        
         <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
             <h4><strong>Books with Minimum Stock Left</strong></h4>
             <div style="width: 80%;margin: auto;">
@@ -114,21 +77,7 @@
                 </table>
             </div>
         </div>
-        <div class="flex-40 verticalFlex" style="flex: 0 0 30%;">
-            <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
-                <h6>Total Times Issued</h6>
-                <h3 style="color: #FF5370;">{{total_issues}}</h3>
-            </div>
-            <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
-                <h6>Total Transactions Amount</h6>
-                <h3 style="color: #4098FE;">{{total_amount}}</h3>
-            </div>
-            <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
-                <h6>Total Debt Due</h6>
-                <h3 style="color: #FFB64D;">{{total_debt}}</h3>
-            </div>
-
-        </div>
+  
     </div>
 
 </div>

@@ -37,7 +37,6 @@
                 <th>Stock</th>
                 <th>Times Issued</th>
                 <th>Edit</th>
-                <th>Issue</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -50,7 +49,6 @@
                 <td>{{book.stockQty}}</td>
                 <td>{{book.timesIssued}}</td>
                 <td><a href="/books/edit/{{book.book_id}}">Edit</a></td>
-                <td><a href="/issue_book/{{book.book_id}}"><button class="dropbtn">Issue</button></a></td>
                 <td><a href="books/delete/{{book.book_id}}"><button class="dropbtn btn-danger">Delete</button></a></td>
 
             </tr>
